@@ -1,0 +1,132 @@
+html {
+  height: 100%;
+}
+
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  color: black;
+  background-color: #dee1e8;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+#header {
+  height: 250px;
+  background-image: url("https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+  background-repeat: no-repeat;
+  color: #fff;
+  background-position: center;
+  clip-path: polygon(
+    0 0,
+    28% 0,
+    55% 0,
+    84% 0,
+    85% 0,
+    100% 1%,
+    100% 85%,
+    82% 94%,
+    60% 99%,
+    35% 99%,
+    17% 94%,
+    0 87%
+  );
+}
+#container {
+  position: relative;
+  bottom: 70px;
+}
+
+.boxes {
+  width: max(656px, 80vw);
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  margin: 13px auto;
+  background-color: #07242c;
+  font-family: nunito;
+  font-weight: 600;
+  font-size: 17px;
+  border: 1px solid white;
+}
+
+.logo {
+  width: 84px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 12px 10px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.title {
+  width: max(160px, 30vw);
+  padding: 12px 10px;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.requirements {
+  padding: 10px 10px;
+}
+
+.req_el {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid white;
+  margin: 5px;
+  padding: 2px;
+}
+
+#Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 8vh;
+  width: 100%;
+  background-color: #151f29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 400px) {
+  #header {
+    height: 180px;
+    background-image: url("https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+    object-fit: cover;
+  }
+
+  .boxes {
+    width: 90vw;
+
+    font-family: nunito;
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  .req_el {
+    text-align: center;
+    border: 1px solid white;
+    margin: 3px;
+    padding: 0 2px;
+  }
+  #Footer {
+    font-size: 3px;
+  }
+}
